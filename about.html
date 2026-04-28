@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Loopin Store - Tentang Kami</title>
+
+  <!-- Font lucu -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #ffd6ec, #ffeaf6);
+      overflow-x: hidden;
+    }
+
+    /* Sparkle background */
+    .sparkle {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 0 10px white;
+      animation: twinkle 3s infinite ease-in-out;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.5); }
+    }
+
+    /* Hearts floating */
+    .heart {
+      position: absolute;
+      color: #ff8fcf;
+      font-size: 20px;
+      animation: floatUp 6s linear infinite;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(-800px); opacity: 0; }
+    }
+
+    /* Container */
+    .container {
+      text-align: center;
+      padding: 80px 20px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 45px;
+      color: #ff69b4;
+      text-shadow: 0 0 10px #ffc0e0;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* Card kawaii */
+    .card {
+      margin: 40px auto;
+      padding: 30px;
+      max-width: 500px;
+      background: rgba(255,255,255,0.7);
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(255, 182, 193, 0.4);
+      backdrop-filter: blur(12px);
+      border: 2px solid #ffcce6;
+      animation: popUp 1.2s ease;
+    }
+
+    p {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    /* Button kawaii */
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: linear-gradient(45deg, #ff9ecb, #ff6fb5);
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 5px 15px rgba(255,105,180,0.4);
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(255,105,180,0.6);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes popUp {
+      from { transform: scale(0.7); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sparkles -->
+  <div class="sparkle" style="top:20%; left:30%;"></div>
+  <div class="sparkle" style="top:50%; left:70%;"></div>
+  <div class="sparkle" style="top:70%; left:20%;"></div>
+
+  <!-- Hearts -->
+  <div class="heart" style="left:10%;">💖</div>
+  <div class="heart" style="left:50%; animation-delay:2s;">💗</div>
+  <div class="heart" style="left:80%; animation-delay:4s;">💞</div>
+
+  <div class="container">
+    <h1>Loopin Store 🎀</h1>
+
+    <div class="card">
+      <p>
+        Selamat datang di <b>Loopin Store</b> 💕  
+        Kami adalah brand fashion yang menghadirkan wallet lucu, girly, dan aesthetic 
+        untuk kamu yang suka tampil manis dan percaya diri ✨
+      </p>
+
+      <p>
+        Setiap produk kami dipilih dengan penuh cinta 💗  
+        supaya kamu bisa tampil kawaii setiap hari dengan barang yang cute dan trendy!
+      </p>
+
+      <a href="#" class="btn">💖 Lihat Koleksi</a>
+    </div>
+  </div>
+
+</body>
+</html>
